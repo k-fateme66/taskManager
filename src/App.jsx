@@ -23,6 +23,7 @@ function App() {
         </Route>
         <Route path="/login" element={<Registration />} />
         <Route path="/signup" element={<Registration />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </Provider>
   );
