@@ -13,11 +13,13 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Navigate to="/tasks" />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="/archives" element={<Archive />} />
-          <Route path="/profile" element={<Profile />} />
+        <Route element={<PrivateRoutes />}>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Navigate to="/tasks" />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="/archives" element={<Archive />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
         </Route>
         <Route path="/login" element={<Registration />} />
         <Route path="/signup" element={<Registration />} />
