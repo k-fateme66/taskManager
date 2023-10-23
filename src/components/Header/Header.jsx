@@ -83,14 +83,14 @@ const Header = () => {
           </div>
         </Container>
       </header>
-      <nav className="d-md-none position-absolute bottom-0 w-100 py-2 border-top border-light">
+      <nav className="d-md-none bg-white position-absolute bottom-0 w-100 py-3 border-top border-light">
         <Container className="container d-flex justify-content-around">
           <NavLink
             to="tasks"
             className={({ isActive }) =>
               isActive
-                ? "btn text-primary d-flex flex-column justify-content-center align-items-center"
-                : "btn  d-flex flex-column justify-content-center align-items-center"
+                ? "position-relative btn py-0 text-primary d-flex flex-column justify-content-center align-items-center"
+                : "position-relative btn py-0 d-flex flex-column justify-content-center align-items-center"
             }
           >
             <BsCalendar3 className="w-5 h-5 d-block" />
@@ -100,8 +100,8 @@ const Header = () => {
             to="archives"
             className={({ isActive }) =>
               isActive
-                ? "btn text-primary  d-flex flex-column justify-content-center align-items-center"
-                : "btn  d-flex flex-column justify-content-center align-items-center"
+                ? "btn py-0 text-primary  d-flex flex-column justify-content-center align-items-center"
+                : "btn  py-0 d-flex flex-column justify-content-center align-items-center"
             }
           >
             <BsFillCalendar2WeekFill className="w-5 h-5 d-block" />
