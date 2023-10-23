@@ -4,6 +4,14 @@ body {
 .header-page {
   height: 4rem;
 }
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border-color: transparent !important;
+}
 /* ******************form-control custom************************* */
 #form-signin .form-control {
   background-color: #f8f9fa;
