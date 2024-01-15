@@ -17,7 +17,6 @@ export const tasksSlice = createSlice({
     },
     getTasks: (state) => {
       const task = JSON.parse(localStorage.getItem("Tasks")) || [];
-      console.log(task);
       state.data = task;
       state.isLoading = false;
     },

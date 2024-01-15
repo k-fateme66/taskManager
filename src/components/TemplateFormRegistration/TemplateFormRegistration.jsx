@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Login } from "../../features/Auth/authSlice";
 import { useNavigate } from "react-router-dom";
 
-function TemplateFormRegistration({ type }) {
+function TemplateFormRegistration() {
   const [user, setUser] = useState(null);
   const [input, setInput] = useState("");
   const [errorShow, setErrorShow] = useState(false);
@@ -17,6 +17,7 @@ function TemplateFormRegistration({ type }) {
       navigate("/", { replace: true });
     }
   }, [data]);
+  console.log("TemplateFormRegistration");
   const submitHandler = (e) => {
     e.preventDefault();
     let regex = /\S+@\S+\.\S+/;

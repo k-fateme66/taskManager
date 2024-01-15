@@ -2,6 +2,8 @@
 
 This is link Demo [Task Manager](https://task-manager-karimi.vercel.app/)
 
+![image info](src/assets/img/screen.jpg)
+
 This project is a task manager that is implemented with React.
 The project features include:
 
